@@ -11,21 +11,6 @@ const WOLT_URL =
   "https://wolt.com/ro/rou/iasi/restaurant/el-petra-shawarma-69ccfdd5844ce44e47771616";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "El Petra Shawarma — Shawarma arabescă autentică în Iași" },
-      {
-        name: "description",
-        content:
-          "Shawarma iordaniană autentică în centrul Iașului. Rețete tradiționale, carne marinată lent, condimente din Orient. Comandă pe Wolt.",
-      },
-      { property: "og:title", content: "El Petra Shawarma — Iași" },
-      {
-        property: "og:description",
-        content: "Gustul Orientului, în inima Iașului.",
-      },
-    ],
-  }),
   component: HomePage,
 });
 

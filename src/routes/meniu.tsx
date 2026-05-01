@@ -4,21 +4,6 @@ const WOLT_URL =
   "https://wolt.com/ro/rou/iasi/restaurant/el-petra-shawarma-69ccfdd5844ce44e47771616";
 
 export const Route = createFileRoute("/meniu")({
-  head: () => ({
-    meta: [
-      { title: "Meniu — El Petra Shawarma Iași" },
-      {
-        name: "description",
-        content:
-          "Meniul El Petra: shaorma de vită, pui și mix, meniu arăbesc, garnituri, băuturi și sosuri. Prețuri corecte în centrul Iașului.",
-      },
-      { property: "og:title", content: "Meniu El Petra Shawarma" },
-      {
-        property: "og:description",
-        content: "Shaorma la lipie, meniuri arăbești, garnituri și sosuri tradiționale.",
-      },
-    ],
-  }),
   component: MenuPage,
 });
 

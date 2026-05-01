@@ -5,21 +5,6 @@ const WOLT_URL =
   "https://wolt.com/ro/rou/iasi/restaurant/el-petra-shawarma-69ccfdd5844ce44e47771616";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — El Petra Shawarma Iași" },
-      {
-        name: "description",
-        content:
-          "Vizitează-ne pe Strada Vasile Alecsandri 7-11, Iași. Telefon: +40 790 915 977. Program zilnic. Comandă online pe Wolt.",
-      },
-      { property: "og:title", content: "Contact El Petra Shawarma" },
-      {
-        property: "og:description",
-        content: "Adresă, program și contact El Petra Shawarma Iași.",
-      },
-    ],
-  }),
   component: ContactPage,
 });
 
