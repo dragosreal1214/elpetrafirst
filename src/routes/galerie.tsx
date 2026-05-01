@@ -43,14 +43,14 @@ function GalleryPage() {
   ];
 
   return (
-    <div className="pt-32 pb-20 bg-background relative">
+    <div className="pt-24 md:pt-32 pb-14 md:pb-20 bg-background relative">
       <div className="absolute inset-0 sand-grain pointer-events-none" />
       <div className="relative max-w-7xl mx-auto px-6">
         <header className="text-center mb-10">
           <div className="font-display text-gold text-sm tracking-[0.3em] mb-3">
             ✦ GALERIE ✦
           </div>
-          <h1 className="font-serif text-4xl md:text-6xl text-wheat">
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl text-wheat">
             Lasă imaginile să vorbească
           </h1>
           <p className="font-serif italic text-wheat/70 mt-4 max-w-xl mx-auto">

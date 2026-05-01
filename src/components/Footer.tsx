@@ -4,20 +4,20 @@ import { Instagram, Phone, MapPin } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-surface border-t border-gold/20 mt-0">
-      <div className="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10">
-        <div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-14 grid md:grid-cols-3 gap-8 md:gap-10">
+        <div className="text-center md:text-left">
           <div className="font-display text-2xl font-bold text-gold tracking-widest">
             EL PETRA
           </div>
           <div className="font-serif italic text-sm text-wheat tracking-[0.25em] mt-1">
             shawarma
           </div>
-          <p className="font-serif italic text-wheat/80 mt-4 max-w-xs">
+          <p className="font-serif italic text-wheat/80 mt-4 max-w-xs mx-auto md:mx-0">
             „Gustul Orientului, în inima Iașului."
           </p>
         </div>
 
-        <div>
+        <div className="text-center md:text-left">
           <h4 className="font-display text-gold text-sm tracking-widest mb-4">NAVIGARE</h4>
           <ul className="space-y-2 text-wheat/80">
             <li><Link to="/" className="hover:text-gold transition-colors">Acasă</Link></li>
@@ -27,9 +27,9 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className="text-center md:text-left">
           <h4 className="font-display text-gold text-sm tracking-widest mb-4">CONTACT</h4>
-          <ul className="space-y-3 text-wheat/80 text-sm">
+          <ul className="space-y-3 text-wheat/80 text-sm inline-block text-left">
             <li className="flex items-start gap-2">
               <MapPin size={16} className="text-gold mt-0.5 shrink-0" />
               <span>Str. Vasile Alecsandri 7-11, Iași 700054</span>

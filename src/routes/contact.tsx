@@ -10,14 +10,14 @@ export const Route = createFileRoute("/contact")({
 
 function ContactPage() {
   return (
-    <div className="pt-32 pb-20 bg-background relative">
+    <div className="pt-24 md:pt-32 pb-14 md:pb-20 bg-background relative">
       <div className="absolute inset-0 starfield opacity-15 pointer-events-none" />
-      <div className="relative max-w-6xl mx-auto px-6">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <header className="text-center mb-14">
           <div className="font-display text-gold text-sm tracking-[0.3em] mb-3">
             ✦ CONTACT ✦
           </div>
-          <h1 className="font-serif text-4xl md:text-6xl text-wheat">
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl text-wheat">
             Vino să ne <em className="text-gold">cunoști</em>
           </h1>
           <div className="gold-divider my-6 max-w-[200px] mx-auto" />
@@ -76,7 +76,7 @@ function ContactPage() {
           </div>
 
           {/* Map */}
-          <div className="ornate-frame rounded-lg overflow-hidden h-[420px] md:h-full min-h-[420px]">
+          <div className="ornate-frame rounded-lg overflow-hidden h-[280px] sm:h-[380px] md:h-full md:min-h-[420px]">
             <iframe
               title="El Petra Shawarma — locație pe hartă"
               src="https://www.google.com/maps?q=El+Petra+Shawarma+Strada+Vasile+Alecsandri+Iasi&output=embed"
@@ -91,14 +91,14 @@ function ContactPage() {
         </div>
 
         {/* Form */}
-        <div className="mt-20 max-w-2xl mx-auto">
-          <h2 className="font-serif text-3xl text-wheat text-center">Trimite-ne un mesaj</h2>
+        <div className="mt-12 md:mt-20 max-w-2xl mx-auto">
+          <h2 className="font-serif text-2xl sm:text-3xl text-wheat text-center">Trimite-ne un mesaj</h2>
           <div className="gold-divider my-6 max-w-[140px] mx-auto" />
 
           <form
             action="https://formspree.io/f/your-form-id"
             method="POST"
-            className="space-y-5 bg-surface border border-gold/15 rounded-lg p-8"
+            className="space-y-5 bg-surface border border-gold/15 rounded-lg p-5 sm:p-8"
           >
             <Field label="Nume">
               <input

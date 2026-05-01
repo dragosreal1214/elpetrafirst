@@ -19,22 +19,22 @@ function Section({
   items: Item[];
 }) {
   return (
-    <div className="mb-14">
+    <div className="mb-12">
       <div className="flex items-center gap-3 mb-6">
-        <span className="text-2xl">{icon}</span>
-        <h2 className="font-display text-2xl md:text-3xl text-gold tracking-widest">
+        <span className="text-xl md:text-2xl shrink-0">{icon}</span>
+        <h2 className="font-display text-lg sm:text-2xl md:text-3xl text-gold tracking-widest shrink-0">
           {title}
         </h2>
-        <div className="flex-1 h-px bg-gold/20" />
+        <div className="flex-1 h-px bg-gold/20 min-w-0" />
       </div>
       <ul className="space-y-5">
         {items.map((it) => (
-          <li key={it.name} className="flex items-baseline">
-            <div className="flex-shrink-0">
-              <div className="font-serif text-lg text-wheat">
-                {it.name}
+          <li key={it.name} className="flex items-start gap-3">
+            <div className="flex-1 min-w-0">
+              <div className="font-serif text-base sm:text-lg text-wheat flex flex-wrap items-center gap-2">
+                <span>{it.name}</span>
                 {it.tag && (
-                  <span className="ml-3 text-xs font-display tracking-wider text-gold">
+                  <span className="text-xs font-display tracking-wider text-gold whitespace-nowrap">
                     ⭐ {it.tag}
                   </span>
                 )}
@@ -43,8 +43,7 @@ function Section({
                 <div className="text-wheat/60 text-sm italic mt-1">{it.desc}</div>
               )}
             </div>
-            <span className="menu-leader" />
-            <span className="font-display text-lg text-gold font-bold whitespace-nowrap">
+            <span className="font-display text-base sm:text-lg text-gold font-bold whitespace-nowrap shrink-0 pt-0.5">
               {it.price}
             </span>
           </li>
@@ -56,16 +55,16 @@ function Section({
 
 function MenuPage() {
   return (
-    <div className="pt-32 pb-20 bg-background relative">
+    <div className="pt-24 md:pt-32 pb-14 md:pb-20 bg-background relative">
       <div className="absolute inset-0 starfield opacity-15 pointer-events-none" />
       <div className="absolute inset-0 sand-grain pointer-events-none" />
 
-      <div className="relative max-w-3xl mx-auto px-6">
-        <header className="text-center mb-14">
+      <div className="relative max-w-3xl mx-auto px-4 sm:px-6">
+        <header className="text-center mb-10 md:mb-14">
           <div className="font-display text-gold text-sm tracking-[0.3em] mb-3">
             ✦ MENIU ✦
           </div>
-          <h1 className="font-serif text-4xl md:text-6xl text-wheat">Meniul nostru</h1>
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl text-wheat">Meniul nostru</h1>
           <p className="font-serif italic text-wheat/70 mt-4">
             Rețete iordaniene autentice, pregătite cu mirodenii din Orient.
           </p>
@@ -88,7 +87,7 @@ function MenuPage() {
 
         <Section
           icon="🍽️"
-          title="MENIU SHAORMA ARĂBEASCĂ"
+          title="MENIU ARĂBESC"
           items={[
             {
               name: "Meniu Shaorma Arăbească",
@@ -110,7 +109,7 @@ function MenuPage() {
 
         <Section
           icon="🥤"
-          title="BĂUTURI RĂCORITOARE"
+          title="BĂUTURI"
           items={[
             { name: "Coca-Cola / Fanta / Sprite 0.33L", price: "8 RON" },
             { name: "Apă plată / minerală 0.5L", price: "6 RON" },

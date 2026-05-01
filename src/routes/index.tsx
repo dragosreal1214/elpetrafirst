@@ -30,16 +30,16 @@ function HomePage() {
         <div className="absolute inset-0 starfield opacity-40" />
         <div className="absolute inset-0 sand-grain" />
 
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto py-32">
-          <div className="text-gold text-3xl mb-6">☾ ✦ ☾</div>
-          <h1 className="font-display text-5xl md:text-7xl font-bold text-wheat leading-tight">
+        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto py-20 md:py-32">
+          <div className="text-gold text-2xl md:text-3xl mb-6">☾ ✦ ☾</div>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold text-wheat leading-tight">
             Shawarma Arabescă
             <span className="block text-gold mt-2">Autentică</span>
           </h1>
-          <p className="font-serif italic text-lg md:text-xl text-wheat/90 mt-8 max-w-2xl mx-auto">
+          <p className="font-serif italic text-base md:text-xl text-wheat/90 mt-6 md:mt-8 max-w-2xl mx-auto">
             Rețete iordaniene tradiționale, preparate cu pasiune în centrul Iașului.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 md:mt-10">
             <a href={WOLT_URL} target="_blank" rel="noopener noreferrer" className="btn-gold">
               Comandă pe Wolt
             </a>
@@ -55,14 +55,14 @@ function HomePage() {
       </section>
 
       {/* POVESTEA */}
-      <section className="py-24 bg-background relative">
+      <section className="py-14 md:py-24 bg-background relative">
         <div className="absolute inset-0 sand-grain opacity-50" />
-        <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div>
             <div className="font-display text-gold text-sm tracking-[0.3em] mb-4">
               POVESTEA NOASTRĂ
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl text-wheat leading-tight">
+            <h2 className="font-serif text-3xl md:text-5xl text-wheat leading-tight">
               Nu e shaorma. <em className="text-gold">E artă.</em>
             </h2>
             <div className="gold-divider my-6 max-w-[120px] mx-0" />
@@ -76,7 +76,7 @@ function HomePage() {
               — cozi de sute de metri s-au format în prima zi de la lansare.
             </p>
           </div>
-          <div className="ornate-frame rounded-lg overflow-hidden">
+          <div className="ornate-frame rounded-lg overflow-hidden aspect-[4/3] md:aspect-auto">
             <img
               src={interiorImg}
               alt="Interior El Petra Shawarma cu mural Petra"
@@ -92,16 +92,16 @@ function HomePage() {
       <SectionDivider />
 
       {/* SPECIALITĂȚI */}
-      <section id="meniu" className="py-24 bg-surface relative">
+      <section id="meniu" className="py-14 md:py-24 bg-surface relative">
         <div className="absolute inset-0 starfield opacity-20" />
         <div className="relative max-w-6xl mx-auto px-6 text-center">
           <div className="font-display text-gold text-sm tracking-[0.3em] mb-3">
             ★ MENIU ★
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl text-wheat">Specialitățile casei</h2>
+          <h2 className="font-serif text-3xl md:text-5xl text-wheat">Specialitățile casei</h2>
           <div className="gold-divider my-6 max-w-[160px] mx-auto" />
 
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mt-10 md:mt-12">
             {[
               {
                 img: beefImg,
@@ -136,11 +136,11 @@ function HomePage() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="font-serif text-xl text-gold">{item.title}</h3>
+                <div className="p-5 md:p-6">
+                  <h3 className="font-serif text-lg md:text-xl text-gold">{item.title}</h3>
                   <p className="text-wheat/80 text-sm mt-3 leading-relaxed">{item.desc}</p>
                   <div className="flex items-center justify-between mt-5 pt-4 border-t border-gold/15">
-                    <span className="font-display text-2xl text-wheat font-bold">
+                    <span className="font-display text-xl md:text-2xl text-wheat font-bold">
                       {item.price}
                     </span>
                     <a
@@ -157,7 +157,7 @@ function HomePage() {
             ))}
           </div>
 
-          <div className="mt-12">
+          <div className="mt-10 md:mt-12">
             <Link to="/meniu" className="btn-gold-outline">
               Vezi meniul complet
             </Link>
@@ -166,18 +166,18 @@ function HomePage() {
       </section>
 
       {/* DE CE EL PETRA */}
-      <section className="py-24 bg-background">
+      <section className="py-14 md:py-24 bg-background">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
+          <div className="text-center mb-10 md:mb-14">
             <div className="font-display text-gold text-sm tracking-[0.3em] mb-3">
               DE CE EL PETRA?
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl text-wheat">
+            <h2 className="font-serif text-3xl md:text-5xl text-wheat">
               Trei motive. <em className="text-gold">Un singur gust.</em>
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {[
               {
                 icon: <Leaf className="text-gold" size={32} />,
@@ -197,12 +197,12 @@ function HomePage() {
             ].map((f) => (
               <div
                 key={f.title}
-                className="card-lift bg-surface border border-gold/15 rounded-lg p-8 text-center"
+                className="card-lift bg-surface border border-gold/15 rounded-lg p-6 md:p-8 text-center sm:col-span-1"
               >
                 <div className="w-16 h-16 rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center mx-auto mb-5">
                   {f.icon}
                 </div>
-                <h3 className="font-serif text-xl text-gold">{f.title}</h3>
+                <h3 className="font-serif text-lg md:text-xl text-gold">{f.title}</h3>
                 <p className="text-wheat/75 mt-3 leading-relaxed">{f.desc}</p>
               </div>
             ))}
@@ -211,18 +211,18 @@ function HomePage() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="py-24 bg-surface relative">
+      <section className="py-14 md:py-24 bg-surface relative">
         <div className="absolute inset-0 starfield opacity-25" />
         <div className="relative max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
+          <div className="text-center mb-10 md:mb-14">
             <div className="font-display text-gold text-sm tracking-[0.3em] mb-3">
               TESTIMONIALE
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl text-wheat">Ce spun clienții</h2>
+            <h2 className="font-serif text-3xl md:text-5xl text-wheat">Ce spun clienții</h2>
             <div className="gold-divider my-6 max-w-[140px] mx-auto" />
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             {[
               {
                 quote:
@@ -245,9 +245,9 @@ function HomePage() {
             ].map((t, i) => (
               <div
                 key={i}
-                className="card-lift bg-background border border-gold/20 rounded-lg p-8 relative"
+                className="card-lift bg-background border border-gold/20 rounded-lg p-6 md:p-8 relative"
               >
-                <Quote className="text-gold/30 absolute top-4 right-4" size={36} />
+                <Quote className="text-gold/30 absolute top-4 right-4" size={32} />
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, j) => (
                     <Star key={j} size={16} className="fill-gold text-gold" />
@@ -265,11 +265,11 @@ function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-background relative overflow-hidden">
+      <section className="py-12 md:py-20 bg-background relative overflow-hidden">
         <div className="absolute inset-0 starfield opacity-30" />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gold/5 to-transparent" />
         <div className="relative max-w-3xl mx-auto px-6 text-center">
-          <h2 className="font-serif text-4xl md:text-5xl text-wheat">
+          <h2 className="font-serif text-3xl md:text-5xl text-wheat">
             Foame? <em className="text-gold">Suntem la un click distanță.</em>
           </h2>
           <p className="text-wheat/70 mt-4 font-serif italic">
